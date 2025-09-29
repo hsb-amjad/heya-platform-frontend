@@ -22,7 +22,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     }
 
     // Connect to your FastAPI backend
-    const backendUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'
+    const backendUrl = process.env.BACKEND_URL || 'http://localhost:8000'
     
     console.log('Attempting login with backend:', backendUrl)
     
